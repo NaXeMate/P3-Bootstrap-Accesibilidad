@@ -4,5 +4,22 @@
 }
 
 .img-pair img {        
-    height: 100vh;
+    height: auto;
+}
+
+h3 {
+    font-size: 1.25em;
+}
+
+.tarjeta-enlace {
+    border: 2px solid black;
+    border-radius: 3px;
+    box-shadow: 2px 4px rgba(0, 0, 0, 0.5);
+    object-fit: cover;
+    
+    button {
+        border: 1px solid blue;
+        color: blue;
+        background-color: white;
+    }
 }
