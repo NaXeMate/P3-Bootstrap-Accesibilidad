@@ -2,3 +2,7 @@
 .carousel-control-next-icon {
     filter: brightness(0) saturate(100%);
 }
+
+.img-pair img {        
+    height: 100vh;
+}
