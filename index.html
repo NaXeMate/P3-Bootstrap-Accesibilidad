@@ -6,26 +6,33 @@
 
         <title>4All</title>
 
+        <!-- Favicon -->
         <link rel="icon" href="multimedia/img/logo.png">
+
+        <!-- Importación de Bootstrap -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/estilos.css">
+
+        <!-- Importación de CSS -->
+        <link rel="stylesheet" href="css/estilos.css"> 
     </head>
 
     <body>
+        <!-- Header -->
         <header>
             <p>Hola</p>
         </header>
 
+        <!-- Carrusel de imágenes -->
         <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="multimedia/img/carousel-1.png" class="d-block w-100" alt="Primera imagen del carrusel">
+                    <img src="multimedia/img/carousel-1.png" class="d-block img-fluid w-100" alt="Primera imagen del carrusel">
                 </div>
                 <div class="carousel-item">
-                    <img src="multimedia/img/carousel-2.png" class="d-block w-100" alt="Segunda imagen del carrusel">
+                    <img src="multimedia/img/carousel-2.png" class="d-block img-fluid w-100" alt="Segunda imagen del carrusel">
                 </div>
                 <div class="carousel-item">
-                    <img src="multimedia/img/carousel-3.png" class="d-block w-100" alt="Tercera imagen del carrusel">
+                    <img src="multimedia/img/carousel-3.png" class="d-block img-fluid w-100" alt="Tercera imagen del carrusel">
                 </div>
             </div>
 
@@ -40,77 +47,90 @@
             </button>
         </div>
 
+        <!-- Main -->
         <main>
             <article class="p-5">
-                <h1>4All - Accesibilidad Web: Más allá de las barreras digitales</h1>
+                <h1 class="text-center fw-bold">4All - Accesibilidad Web: Más allá de las barreras digitales</h1>
                 <p>La accesibilidad web nos ayuda a que todas las personas, independientemente de sus capacidades, puedan navegar, informarse y participar en la red. ¿Por qué es importante? Porque la web debe incluir a todos, sin excepciones. Aquí aprenderás buenas prácticas y los motivos reales para que tus proyectos sean realmente accesibles. La tecnología debe ser un puente, no una barrera. Cuando diseñamos pensando en la diversidad, no solo cumplimos la ley, sino que mejoramos la experiencia de uso para todo el mundo. Además, la accesibilidad convierte tu sitio en un espacio abierto, amigable y preparado para cualquier usuario, sin importar su situación personal. Apostar por la inclusión digital es apostar por la creatividad, el respeto y el avance social, adaptando cada detalle para que nadie se quede atrás.</p>
             </article>
 
+            <!-- Imágenes del main -->
             <div class="img-pair container mx-auto">
                 <div class="row">
                     <div class="col-6 gap-3">
-                        <img class="w-100" src="multimedia/img/main-1.png" alt="Puente que conexta a las personas">
+                        <img class="img-fluid" src="multimedia/img/main-1.png" alt="Puente que conexta a las personas">
                     </div>
                     <div class="col-6 gap-3">
-                        <img class="w-100" src="multimedia/img/main-2.png" alt="Recursos accesibles para conectar a las personas">
+                        <img class="img-fluid" src="multimedia/img/main-2.png" alt="Recursos accesibles para conectar a las personas">
                     </div>
                 </div>
             </div>
         </main>
 
+        <!-- Sección de enlaces destacados -->
         <section class="enlaces-destacados">
             <article class="p-5">
-                <h2>Enlaces destacados</h2>
+                <h2 class="fw-bold">Enlaces destacados</h2>
                 <p>¡Te presentamos algunos de nuestros contenidos más destacados!</p>
             </article>
-            
+
+            <!-- Tarjetas de enlaces destacados -->
             <div class="row gap-5 mx-auto justify-content-center">
-                <article class="tarjeta-enlace col-3 p-2">
+                <article class="tarjeta-enlace col-3 p-2 rounded-3">
                     <h3>Aprende sobre la normativa vigente</h3>
                     <p>Descubre las leyes y estándares que determinan cómo deben ser las webs accesibles. Conoce los niveles de la WCAG, la legislación española más actual, y lo que significa cumplir con las normas. Te explicamos, de forma sencilla y práctica, qué requisitos son obligatorios, cuáles son muy recomendables y cómo aplicarlos correctamente en tus proyectos para garantizar una navegación inclusiva para todos.</p>
-                    <button type="submit" class="ver-mas-button">VER MÁS</button>
+                    <button type="submit" class="ver-mas-button fw-bold rounded-5 p-2">VER MÁS</button>
                 </article>
                 
-                <article class="tarjeta-enlace col-3 p-2">
+                <article class="tarjeta-enlace col-3 p-2 rounded-3">
                     <h3>Descubre buenas prácticas en diseño accesible</h3>
                     <p>Aprende las claves para crear sitios web que sean realmente inclusivos y cómodos de usar. Te mostramos consejos y ejemplos prácticos para mejorar la navegación, el contraste, la estructura y la interacción, pensando siempre en usuarios con diferentes capacidades. Desarrolla proyectos donde la accesibilidad no sea un extra, sino una parte esencial del diseño.</p>
-                    <button type="submit" class="ver-mas-button">VER MÁS</button>
+                    <button type="submit" class="ver-mas-button fw-bold rounded-5 p-2">VER MÁS</button>
                 </article>
                 
-                <article class="tarjeta-enlace col-3 p-2">
+                <article class="tarjeta-enlace col-3 p-2 rounded-3">
                     <h3>Accede a recursos y herramientas</h3>
                     <p>Encuentra una selección de utilidades y enlaces imprescindibles para comprobar, mejorar y aprender sobre accesibilidad web. Ponemos a tu alcance validadores, simuladores, documentación oficial y consejos actualizados para que puedas aplicar la accesibilidad en tus páginas de manera sencilla y efectiva. Todo lo que necesitas para dar un salto en calidad y usabilidad, reunido en un solo lugar.</p>
-                    <button type="submit" class="ver-mas-button">VER MÁS</button>
+                    <button type="submit" class="ver-mas-button fw-bold rounded-5 p-2">VER MÁS</button>
                 </article>
             </div>
         </section>
-
+        
+        <!-- Sección de contacto -->
         <section class="contacto">
-            
             <article class="p-5">
-                <h2>Contáctanos</h2>
-
+                <h2 class="fw-bold">Contáctanos</h2>
                 <p>¿Tienes dudas o quieres aportar algo? Escríbenos y ayudemos juntos a mejorar la accesibilidad digital.</p>
             </article>
 
-            <form class="p-5">
-                <input type="text" name="nombre" placeholder="Nombre">
-                <input type="email" name="email" placeholder="Email">
-                <select name="categoría">
-                    <option value="">Selecciona una categoría</option>
-                    <option value="">Consulta personal</option>
-                    <option value="">Propuesta de mejora</option>
-                    <option value="">Otros</option>
+            <!-- Formulario de contacto -->
+            <form class="d-flex flex-column gap-2 p-5">
+                <label for="nombre" class="mb-2">Nombre</label>
+                <input type="text" class="form-control mb-2" id="nombre" name="nombre" placeholder="Nombre">
+                
+                <label for="email" class="mb-2">Email</label>
+                <input type="email" class="form-control mb-2" id="email" name="email" placeholder="Email">
+                
+                <label for="categoría" class="mb-2">Categoría</label>
+                <select id="categoría" name="categoría" class="form-select mb-2">
+                    <option>Consulta personal</option>
+                    <option>Propuesta de mejora</option>
+                    <option>Otros</option>
                 </select>
-                <textarea name="mensaje" placeholder="Mensaje" rows="10"></textarea>
-                <button type="submit">Enviar</button>
+                
+                <label for="mensaje" class="mb-2">Mensaje</label>
+                <textarea class="form-control mb-3" id="mensaje" name="mensaje" placeholder="Mensaje" rows="10"></textarea>
+                
+                <button class="rounded-5 fw-bold p-2 mt-2 w-25 align-self-center" type="submit">ENVIAR</button>
             </form>
         </section>
 
+        <!-- Footer -->
         <footer>
             <p>© Mateo Quintela Trillo - 2025</p>
         </footer>
 
+        <!-- Script de Bootstrap -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     </body>
 </html>
