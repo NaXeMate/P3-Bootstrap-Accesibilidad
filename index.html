@@ -18,8 +18,39 @@
 
     <body>
         <!-- Header -->
-        <header>
-            <p>Hola</p>
+        <header class="sticky-top">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <!-- Logo y nombre de la web -->
+                    <a class="navbar-brand" href="">
+                        <img id="logo" src="multimedia/img/logo.png" alt="Logotipo de la web" class="m-2">
+                        4All</a>
+                    <!-- Menú hamburguesa para pantallas pequeñas -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContenido" aria-controls="navbarContenido" aria-expanded="false" aria-label="Abrir menú">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarContenido">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#enlaces-destacados">Enlaces Destacados</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Buenas Prácticas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Recursos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contacto">Contáctenos</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </header>
 
         <!-- Carrusel de imágenes -->
@@ -50,7 +81,7 @@
         <!-- Main -->
         <main>
             <article class="p-5">
-                <h1 class="text-center fw-bold">4All - Accesibilidad Web: Más allá de las barreras digitales</h1>
+                <h1 class="text-center fw-bold">Accesibilidad Web: Más allá de las barreras digitales</h1>
                 <p>La accesibilidad web nos ayuda a que todas las personas, independientemente de sus capacidades, puedan navegar, informarse y participar en la red. ¿Por qué es importante? Porque la web debe incluir a todos, sin excepciones. Aquí aprenderás buenas prácticas y los motivos reales para que tus proyectos sean realmente accesibles. La tecnología debe ser un puente, no una barrera. Cuando diseñamos pensando en la diversidad, no solo cumplimos la ley, sino que mejoramos la experiencia de uso para todo el mundo. Además, la accesibilidad convierte tu sitio en un espacio abierto, amigable y preparado para cualquier usuario, sin importar su situación personal. Apostar por la inclusión digital es apostar por la creatividad, el respeto y el avance social, adaptando cada detalle para que nadie se quede atrás.</p>
             </article>
 
@@ -68,7 +99,7 @@
         </main>
 
         <!-- Sección de enlaces destacados -->
-        <section class="enlaces-destacados">
+        <section id="enlaces-destacados" class="enlaces-destacados">
             <article class="p-5">
                 <h2 class="fw-bold">Enlaces destacados</h2>
                 <p>¡Te presentamos algunos de nuestros contenidos más destacados!</p>
@@ -97,7 +128,7 @@
         </section>
         
         <!-- Sección de contacto -->
-        <section class="contacto">
+        <section id="contacto" class="contacto">
             <article class="p-5">
                 <h2 class="fw-bold">Contáctanos</h2>
                 <p>¿Tienes dudas o quieres aportar algo? Escríbenos y ayudemos juntos a mejorar la accesibilidad digital.</p>
