@@ -18,6 +18,14 @@ body {
     background-color: #ffe5e5;
 }
 
+a {
+    color: #ac87c5;
+    font-weight: bold;
+}
+
+a:hover {
+    color: white;
+}
 
 nav {
     background-color: #e5bfff;
@@ -53,7 +61,6 @@ h4 {
     height: auto;
 }
 
-
 .tarjeta-enlace {
     background-color: #ac87c5;
     border: 2px solid black;
@@ -78,5 +85,5 @@ button:hover {
 }
 
 footer {
-    background-color: #e0aed0;
+    background-color: #e5bfff;
 }
