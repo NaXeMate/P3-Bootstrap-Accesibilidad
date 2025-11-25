@@ -1,1 +1,145 @@
 <!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>4All</title>
+
+        <!-- Favicon -->
+        <link rel="icon" href="multimedia/img/logo.png">
+
+        <!-- Importación de Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+        <!-- Importación de iconos de Bootstrap -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+        <!-- Importación de CSS -->
+        <link rel="stylesheet" href="css/estilos.css">
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="sticky-top">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <!-- Logo y nombre de la web -->
+                    <a class="navbar-brand" href="index.html#presentacion">
+                        <img id="logo" src="multimedia/img/logo.png" alt="Logotipo de la web" class="m-2">
+                        4All</a>
+                    <!-- Menú hamburguesa para pantallas pequeñas -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContenido" aria-controls="navbarContenido" aria-expanded="false" aria-label="Abrir menú">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarContenido">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#enlaces-destacados">Enlaces Destacados</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Buenas Prácticas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Recursos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contacto">Contáctenos</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Modal de Encuesta de Satisfacción Bootstrap -->
+        <div class="modal fade" id="modalEncuesta" tabindex="-1" aria-labelledby="encuestaLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="encuestaLabel">¿La experiencia en la página está siendo cómoda?</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <p>Tu opinión nos ayuda a mejorar. ¿Cómo valorarías tu experiencia?</p>
+                    <div class="d-flex justify-content-center gap-4">
+                    <button type="button" class="btn btn-light" id="btnSatisfactoria">
+                        <img src="multimedia/iconos/btn_satisfactoria.png" alt="Satisfactoria" style="height:32px;">
+                        <span class="ms-2">Satisfactoria</span>
+                    </button>
+                    <button type="button" class="btn btn-light" id="btnNoSatisfactoria">
+                        <img src="multimedia/iconos/btn_satisfactoria.png" alt="No satisfactoria" style="height:32px;">
+                        <span class="ms-2">No satisfactoria</span>
+                    </button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="text-dark py-4 mt-5">
+            <div class="container">
+                <div class="row">
+                <!-- Columna 1 -->
+                    <div class="col-md-3 mb-3">
+                        <h4>Sobre el proyecto</h4>
+                        <p>Iniciativa DAW para fomentar la accesibilidad web.<br>
+                        Aprende y comparte recursos para una web sin barreras.
+                        </p>
+                    </div>
+                    <!-- Columna 2 -->
+                    <div class="col-md-3 mb-3">
+                        <h4>Recursos útiles</h4>
+                        <ul class="list-unstyled">
+                        <li><a href="#" class="text-decoration-none">Guía WCAG</a></li>
+                        <li><a href="#" class="text-decoration-none">Herramientas de validación</a></li>
+                        </ul>
+                    </div>
+                    <!-- Columna 3 -->
+                    <div class="col-md-3 mb-3">
+                        <h4>Contacto</h4>
+                        <ul class="list-unstyled">
+                        <li>Email: ejemplo@email.com</li>
+                        </ul>
+                    </div>
+                    <!-- Columna 4 -->
+                    <div class="col-md-3 mb-3">
+                        <h4>Síguenos</h4>
+                        <a href="#" class="me-2"><i class="bi bi-rss"></i></a>
+                        <a href="#" class="me-2"><i class="bi bi-github"></i></a>
+                        <a href="#" class="me-2"><i class="bi bi-youtube"></i></a>
+                        <a href="#" class="me-2"><i class="bi bi-stack-overflow"></i></a>
+                    </div>
+                </div>
+                <hr class="border-light">
+                <div class="text-center small mt-2">
+                    <p>© 2025 4All · Práctica DAW. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Script de Bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        
+        <script>
+            var encuestaModal = new bootstrap.Modal(document.getElementById('modalEncuesta'));
+            window.onload = function() {
+                encuestaModal.show();
+            };
+            
+            document.addEventListener("DOMContentLoaded", function() {
+                document.getElementById('btnSatisfactoria').onclick = function() {
+                    encuestaModal.hide();
+                };
+                document.getElementById('btnNoSatisfactoria').onclick = function() {
+                    encuestaModal.hide();
+                };
+            });
+        </script>
+        
+    </body>
+</html>
