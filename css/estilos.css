@@ -11,6 +11,10 @@
     filter: brightness(0) saturate(100%);
 }
 
+.justified {
+    text-align: justify;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
@@ -82,6 +86,28 @@ button {
 button:hover {
     color: #756ab6;
     background-color: white;
+}
+
+.custom-input {
+    border: 2px solid #756ab6;
+    border-radius: 25px;
+    font-weight: 500;
+    color: #756ab6;
+}
+
+.custom-input::placeholder,
+.custom-input option {
+    color: #e0aed0;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+
+.form-label {
+    color: #756ab6;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 1px;
 }
 
 footer {
