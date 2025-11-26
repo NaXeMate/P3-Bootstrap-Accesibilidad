@@ -1,8 +1,7 @@
-# P3-Bootstrap-Accesibilidad
-# README.md - Proyecto 4All: Accesibilidad Web
+# Proyecto 4All: Accesibilidad Web
 
 ## Autor/a de la práctica
-*Nombre del alumno/a aquí*
+Mateo Quintela Trillo
 
 ---
 
