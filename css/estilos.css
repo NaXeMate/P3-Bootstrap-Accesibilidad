@@ -25,6 +25,7 @@ body {
 a {
     color: #ac87c5;
     font-weight: bold;
+    text-decoration: none;
 }
 
 a:hover {
@@ -111,13 +112,82 @@ button:hover {
 }
 
 footer {
-    background-color: #e5bfff;
-    a {
-        color: white;
-        font-weight: bold;
-    }
+    background-color: #e5bfff;    
+}
 
-    a:hover {
-        color: #ac87c5;
+footer a {
+    color: white;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #ac87c5;
+}
+
+/* SM: móviles - max-width: 575.98px */
+@media (max-width: 575.98px) {
+    body {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    
+    h1, h2, h3, h4 {
+        font-size: 1.2rem;
+    }
+    
+    .tarjeta-enlace {
+        font-size: 0.95rem;
+    }
+}
+
+/* MD: móviles grandes y tablet hasta 991.98px */
+@media (max-width: 991.98px) {
+    .img-pair img {
+        margin-bottom: 10px;
+    }
+    
+    footer .row > div {
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+    
+    .contacto button[type="submit"] { width: 100% !important; }
+    #logo { 
+        height: 32px;
+        max-height: 32px; 
+    }
+    
+    .tarjeta-enlace {
+        min-width: 95vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* LG+: monitores grandes y escritorio desde 992px */
+@media (min-width: 992px) {
+    .row { 
+        flex-wrap: wrap !important;
+    }
+    
+    .contacto button[type="submit"] {
+        width: 25% !important;
+    }
+    
+    .tarjeta-enlace {
+        min-width: 30vw;
+    }
+    
+    h1 {
+        font-size: 2.7rem;
+    }
+    
+    .tarjeta-enlace h3 {
+        font-size: 2rem;
+    }
+    
+    .main p,
+    .tarjeta-enlace p {
+        font-size: 1.1rem;
     }
 }
