@@ -21,34 +21,37 @@
 
     <body>
         <!-- Header -->
+        <!-- sticky-top hace que el header siempre fijo en la parte superior de la pantalla-->
         <header class="sticky-top">
+            <!-- navbar hace resposive la barra de navegación -->
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid">
-                    <!-- Logo y nombre de la web -->
-                    <a class="navbar-brand" href="index.html#presentacion">
+                    <!-- Logo y nombre de la web con navbar-brand -->
+                    <a class="navbar-brand" href="#presentacion">
                         <img id="logo" src="multimedia/img/logo.png" alt="Logotipo de la web" class="m-2">
                         4All</a>
-                    <!-- Menú hamburguesa para pantallas pequeñas -->
+                    <!-- Ajustes para el botón del menú hamburguesa para pantallas pequeñas -->
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContenido" aria-controls="navbarContenido" aria-expanded="false" aria-label="Abrir menú">
                         <span class="navbar-toggler-icon"></span>
                     </button>
 
+                    <!-- Ajustes de alineación y elementos del menú hamburguesa -->
                     <div class="collapse navbar-collapse" id="navbarContenido">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="index.html#presentacion">Inicio</a>
+                                <a class="nav-link active" aria-current="page" href="#presentacion">Inicio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="index.html#enlaces-destacados">Enlaces Destacados</a>
+                                <a class="nav-link" href="#enlaces-destacados">Enlaces Destacados</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#recursos">Recursos</a>
+                                <a class="nav-link" href="secundaria.html#recursos">Recursos</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#practicas">Buenas Prácticas</a>
+                                <a class="nav-link" href="secundaria.html#practicas">Buenas Prácticas</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="index.html#contacto">Contáctenos</a>
+                                <a class="nav-link" href="#contacto">Contáctenos</a>
                             </li>
                         </ul>
                     </div>
@@ -57,6 +60,7 @@
         </header>
 
         <!-- Modal de Encuesta de Satisfacción Bootstrap -->
+        <!-- fade se usa para la animación / modal-dialog-centered para centrarlo. -->
         <div class="modal fade" id="modalEncuesta" tabindex="-1" aria-labelledby="encuestaLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
@@ -81,7 +85,7 @@
             </div>
         </div>
 
-        <main class="m-3">
+        <main id="presentacion-secundaria" class="m-3">
             <!-- Resumen normativa básica -->
             <section class="mb-3">
                 <h2 class="mb-3">Normativa básica sobre accesibilidad web</h2>
@@ -92,7 +96,9 @@
         <!-- Tabla de niveles de conformidad -->
         <section class="ms-3 me-3 mb-3">
             <h3 class="mb-3">Niveles de conformidad en accesibilidad</h3>
+            <!-- table-responsive hace que la tabla se adapte a varios tamaños de pantalla -->
             <div class="table-responsive">
+                <!-- table-striped hace que las filas de la tabla usen colores alternos -->
                 <table class="table table-bordered table-striped">
                     <thead class="table-light">
                         <tr>
@@ -125,6 +131,7 @@
         <!-- Enlaces a recursos externos -->
         <section id="recursos" class="ms-3 me-3 mb-3">
             <h3 class="mb-3">Recursos oficiales</h3>
+            <!-- list-group se usa para dar estilos a la lista -->
             <ul class="list-group ms-3">
                 <li>
                     <a href="https://www.w3.org/WAI/WCAG21/translations/" target="_blank">WCAG 2.1 – Directrices internacionales</a>
@@ -138,7 +145,7 @@
             </ul>
         </section>
 
-        <!-- Lista de buenas prácticas -->
+        <!-- Sección de buenas prácticas -->
         <section id="practicas" class="ms-3 me-3 mb-3">
             <h3 class="mb-3">Buenas prácticas para diseñar webs accesibles</h3>
             <ul class="list-group px-0 px-md-3">
@@ -157,6 +164,7 @@
             <h3 class="mb-3">Comparativa visual</h3>
             <div class="row g-4">
                 <div class="col-12 col-md-6 mb-3">
+                    <!-- Uso de border-danger (rojo) y border-success (verde) para catalogar claramente el contenido como bueno o malo -->
                     <div class="card border-danger h-100">
                         <div class="card-header bg-danger text-white">Mal diseño</div>
                         <img src="multimedia/img/mal_diseno.png" class="card-img-top img-fluid h-100" alt="Ejemplo de mal diseño" style="object-fit:cover;height:180px;">
@@ -179,35 +187,36 @@
             </div>
         </section>
 
-        <!-- Footer -->
-        <footer class="text-dark py-4">
+        <!-- Footer estructurado con Grid Bootstrap -->
+        <footer class="text-dark py-4 mt-5">
             <div class="container">
                 <div class="row">
-                <!-- Columna 1 -->
+                <!-- Columna 1: información "importante" -->
                     <div class="col-md-3 mb-3">
                         <h4>Sobre el proyecto</h4>
                         <p>Iniciativa DAW para fomentar la accesibilidad web.<br>
                         Aprende y comparte recursos para una web sin barreras.
                         </p>
                     </div>
-                    <!-- Columna 2 -->
+                    <!-- Columna 2: enlaces varios -->
                     <div class="col-md-3 mb-3">
                         <h4>Recursos útiles</h4>
                         <ul class="list-unstyled">
-                        <li><a href="#" class="text-decoration-none">Guía WCAG</a></li>
-                        <li><a href="#" class="text-decoration-none">Herramientas de validación</a></li>
+                        <li><a href="#presentacion-secundaria" class="text-decoration-none">Guía WCAG</a></li>
+                        <li><a href="#practicas" class="text-decoration-none">Buenas prácticas</a></li>
                         </ul>
                     </div>
-                    <!-- Columna 3 -->
+                    <!-- Columna 3: contacto -->
                     <div class="col-md-3 mb-3">
                         <h4>Contacto</h4>
                         <ul class="list-unstyled">
                         <li>Email: ejemplo@4all.com</li>
                         </ul>
                     </div>
-                    <!-- Columna 4 -->
+                    <!-- Columna 4: RSS -->
                     <div class="col-md-3 mb-3">
                         <h4>Síguenos</h4>
+                        <!-- Iconos de Bootstrap y sus respectivos tooltips-->
                         <a href="#" class="me-2" data-bs-toggle="tooltip" title="RSS Web"><i class="bi bi-rss"></i></a>
                         <a href="#" class="me-2" data-bs-toggle="tooltip" title="GitHub"><i class="bi bi-github"></i></a>
                         <a href="#" class="me-2" data-bs-toggle="tooltip" title="YouTube"><i class="bi bi-youtube"></i></a>
@@ -221,10 +230,10 @@
             </div>
         </footer>
 
-        <!-- Script de Bootstrap -->
+        <!-- Script con importación de JS para elementos Bootstrap -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
         
-        <!-- Script para el Modal -->
+        <!-- Script para el Modal: lo muestra al cargar la página y lo cierra con los botones -->
         <script>
             var encuestaModal = new bootstrap.Modal(document.getElementById('modalEncuesta'));
             window.onload = function() {
@@ -241,7 +250,7 @@
             });
         </script>
 
-        <!-- Script para los tooltips -->
+        <!-- Script para inicializar los tooltips -->
         <script>
             var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
             var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
