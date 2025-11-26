@@ -86,4 +86,12 @@ button:hover {
 
 footer {
     background-color: #e5bfff;
+    a {
+        color: white;
+        font-weight: bold;
+    }
+
+    a:hover {
+        color: #ac87c5;
+    }
 }

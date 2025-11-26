@@ -25,7 +25,7 @@
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid">
                     <!-- Logo y nombre de la web -->
-                    <a class="navbar-brand" href="index.html#presentacion">
+                    <a class="navbar-brand" href="#presentacion">
                         <img id="logo" src="multimedia/img/logo.png" alt="Logotipo de la web" class="m-2">
                         4All</a>
                     <!-- Menú hamburguesa para pantallas pequeñas -->
@@ -36,19 +36,19 @@
                     <div class="collapse navbar-collapse" id="navbarContenido">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                                <a class="nav-link active" aria-current="page" href="index.html#presentacion">Inicio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#enlaces-destacados">Enlaces Destacados</a>
+                                <a class="nav-link" href="index.html#enlaces-destacados">Enlaces Destacados</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Buenas Prácticas</a>
+                                <a class="nav-link" href="#recursos">Recursos</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Recursos</a>
+                                <a class="nav-link" href="#practicas">Buenas Prácticas</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#contacto">Contáctenos</a>
+                                <a class="nav-link" href="index.html#contacto">Contáctenos</a>
                             </li>
                         </ul>
                     </div>
@@ -60,29 +60,127 @@
         <div class="modal fade" id="modalEncuesta" tabindex="-1" aria-labelledby="encuestaLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="encuestaLabel">¿La experiencia en la página está siendo cómoda?</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-                </div>
-                <div class="modal-body text-center">
-                    <p>Tu opinión nos ayuda a mejorar. ¿Cómo valorarías tu experiencia?</p>
-                    <div class="d-flex justify-content-center gap-4">
-                    <button type="button" class="btn btn-light" id="btnSatisfactoria">
-                        <img src="multimedia/iconos/btn_satisfactoria.png" alt="Satisfactoria" style="height:32px;">
-                        <span class="ms-2">Satisfactoria</span>
-                    </button>
-                    <button type="button" class="btn btn-light" id="btnNoSatisfactoria">
-                        <img src="multimedia/iconos/btn_satisfactoria.png" alt="No satisfactoria" style="height:32px;">
-                        <span class="ms-2">No satisfactoria</span>
-                    </button>
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="encuestaLabel">¿La experiencia en la página está siendo cómoda?</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                     </div>
-                </div>
+                    <div class="modal-body text-center">
+                        <p>Tu opinión nos ayuda a mejorar. ¿Cómo valorarías tu experiencia?</p>
+                        <div class="d-flex justify-content-center gap-4">
+                            <button type="button" class="btn btn-light" id="btnSatisfactoria">
+                                <img src="multimedia/iconos/btn_satisfactoria.png" alt="Satisfactoria" style="height:32px;">
+                                <span class="ms-2">Satisfactoria</span>
+                            </button>
+                            <button type="button" class="btn btn-light" id="btnNoSatisfactoria">
+                                <img src="multimedia/iconos/btn_satisfactoria.png" alt="No satisfactoria" style="height:32px;">
+                                <span class="ms-2">No satisfactoria</span>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
+        <main class="m-3">
+            <!-- Resumen normativa básica -->
+            <section class="mb-3">
+                <h2 class="mb-3">Normativa básica sobre accesibilidad web</h2>
+                <p class="mb-3">La accesibilidad web está regulada internacionalmente por las <strong>WCAG</strong> (Web Content Accessibility Guidelines) y, en España, por la <strong>Ley 49/2007</strong>. Las WCAG establecen una serie de recomendaciones técnicas para hacer los sitios web más accesibles a personas con discapacidad. La ley española obliga a que los sitios públicos cumplan, al menos, el nivel AA de conformidad.</p>
+            </section>
+        </main>
+
+        <!-- Tabla de niveles de conformidad -->
+        <section class="m-3">
+            <h3 class="mb-3">Niveles de conformidad en accesibilidad</h3>
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped">
+                    <thead class="table-light">
+                        <tr>
+                            <th>Nivel</th>
+                            <th>Descripción</th>
+                            <th>Ejemplo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="fw-bold">A</td>
+                            <td>Requisitos mínimos</td>
+                            <td>Texto alternativo en imágenes</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold">AA</td>
+                            <td>Requisitos recomendados</td>
+                            <td>Contraste suficiente, navegación con teclado</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold">AAA</td>
+                            <td>Requisitos óptimos</td>
+                            <td>Adaptación total de multimedia, subtitulado y transcripción</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Enlaces a recursos externos -->
+        <section id="recursos" class="ms-3 me-3 mb-3">
+            <h3 class="mb-3">Recursos oficiales</h3>
+            <ul class="list-group">
+                <li>
+                    <a href="https://www.w3.org/WAI/WCAG21/translations/" target="_blank">WCAG 2.1 – Directrices internacionales</a>
+                </li>
+                <li>
+                    <a href="https://www.boe.es/buscar/doc.php?id=BOE-A-2007-17350" target="_blank">Ley 49/2007 de accesibilidad web (BOE)</a>
+                </li>
+                <li>
+                    <a href="https://accesibilidadweb.dipucordoba.es/herramientas/" target="_blank">Herramientas de validación de accesibilidad</a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Lista de buenas prácticas -->
+        <section id="practicas" class="mb-3 ms-3 me-3">
+            <h3 class="mb-3">Buenas prácticas para diseñar webs accesibles</h3>
+            <ul class="list-group">
+                <li>Utiliza colores con buen contraste entre fondo y texto.</li>
+                <li>Incluye texto alternativo en todas las imágenes y botones.</li>
+                <li>Organiza el contenido con encabezados (h1, h2, h3) coherentes y jerárquicos.</li>
+                <li>Verifica que la navegación pueda hacerse solo con teclado.</li>
+                <li>Haz formularios accesibles con etiquetas e instrucciones claras.</li>
+                <li>Evita el uso de solo colores para transmitir información, utiliza también iconos o textos.</li>
+                <li>Incluye subtítulos y transcripciones en multimedia.</li>
+            </ul>
+        </section>
+
+        <!-- Comparativa visual -->
+        <section class="mb-5 ms-3 me-3">
+            <h3 class="mb-3">Comparativa visual</h3>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card border-danger">
+                        <div class="card-header bg-danger text-white">Mal diseño</div>
+                        <img src="multimedia/img/mal_diseno.png" class="card-img-top img-fluid h-100" alt="Ejemplo de mal diseño" style="object-fit:cover;height:180px;">
+                        <div class="card-body">
+                            <p class="card-text">Contraste insuficiente, sin texto alternativo, etiquetas poco claras y navegación difícil.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card border-success">
+                    <div class="card-header bg-success text-white">Buen diseño</div>
+                    <img src="multimedia/img/buen_diseno.png" class="card-img-top img-fluid h-100" alt="Ejemplo de diseño accesible" style="object-fit:cover;height:180px;">
+                    <div class="card-body">
+                        <p class="card-text">
+                        Contraste adecuado, uso de texto alternativo, etiquetas claras y navegación sencilla.
+                        </p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Footer -->
-        <footer class="text-dark py-4 mt-5">
+        <footer class="text-dark py-4">
             <div class="container">
                 <div class="row">
                 <!-- Columna 1 -->
@@ -126,6 +224,7 @@
         <!-- Script de Bootstrap -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
         
+        <!-- Script para el Modal -->
         <script>
             var encuestaModal = new bootstrap.Modal(document.getElementById('modalEncuesta'));
             window.onload = function() {
@@ -140,6 +239,14 @@
                     encuestaModal.hide();
                 };
             });
+        </script>
+
+        <!-- Script para los tooltips -->
+        <script>
+            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+                return new bootstrap.Tooltip(tooltipTriggerEl);
+            })
         </script>
     </body>
 </html>
